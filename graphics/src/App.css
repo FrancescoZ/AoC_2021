@@ -1,38 +1,54 @@
 .App {
-  text-align: center;
+    height: 90vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    background-color: gray;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.playground {
+    width: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.playground canvas {
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.control {
+    width: 100%;
+    height: 30vh;
+    display: flex;
 }
 
-.App-link {
-  color: #61dafb;
+.control .btn {
+    width: 45vw;
+    line-height: 35vh;
+    text-align: center;
+    user-select: none;
+    color: white;
+    border: 1px solid black;
+    margin: auto;
+    background-color: blue;
+    box-sizing: border-box;
+}
+.control .btn:active {
+    border: 4px solid black;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.deadLogo {
+    width: 100%;
+    line-height: 5em;
+    color: white;
+    background-color: black;
+    text-align: center;
+    position: fixed;
+}
+
+.score {
+    width: 100%;
+    position: fixed;
+    color: white;
+    text-align: center;
+    line-height: 5em;
 }
