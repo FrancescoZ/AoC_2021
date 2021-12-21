@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "typescript-graph": "^0.2.1"
+  }
+}
